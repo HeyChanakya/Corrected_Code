@@ -59,38 +59,60 @@
     margin-bottom: 12px; /* ⬅️ Adds space between each element */
 }
 
-#userForm {
+.input-row {
     display: flex;
-    gap: 10px; /* Adds space between input fields and button */
-    flex-wrap: wrap; /* Wraps on small screens */
+    gap: 10px;               /* spacing between input and button */
+    margin-bottom: 12px;     /* space below the row */
+    flex-wrap: wrap;         /* wraps on small screens */
 }
 
-#userForm input {
-    flex: 1; /* Make input fields the same width */
-    padding: 15px; /* Increased padding for larger input boxes */
-    font-size: 18px; /* Increased font size */
+.input-row input,
+.input-row button {
+    flex: 1;                 /* make them the same width */
+    padding: 10px 14px;
+    font-size: 16px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-#userForm button {
-    padding: 15px; /* Increased padding for larger button */
-    font-size: 18px; /* Increased font size */
+#resetBtn,
+#search {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 14px;
+    font-size: 16px;
     border-radius: 8px;
-    background-color: #0077cc;
+    box-sizing: border-box;
+}
+
+/* Specific styles for each */
+#resetBtn {
+    background-color: #ff7675;
     color: white;
     border: none;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#userForm button:hover {
-    background-color: #005fa3;
+#resetBtn:hover {
+    background-color: #d63031;
 }
 
 #search {
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+#search,
+#source {
     width: 100%;
-    max-width: 300px;
     padding: 10px 14px;
     font-size: 16px;
     border-radius: 8px;
@@ -100,7 +122,81 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#search:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+#userForm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; /* keep them in one line unless screen is too narrow */
+    align-items: stretch; /* align input and button vertically */
+}
+
+#userForm input {
+    flex: 1; /* take equal available width */
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 0; /* prevents overflow in flex */
+}
+
+#userForm button {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* prevents button text from wrapping */
+}
+
+#userForm button:hover {
+    background-color: #005fa3;
+}
+
+.news-scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 60%; /* Occupies about 60% of the screen width */
+}
+
+#loading {
+    text-align: center;
+    font-size: 18px;
+    color: #0077cc;
+}
+
+#userForm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; /* keep them in one line unless screen is too narrow */
+    align-items: stretch; /* align input and button vertically */
+}
+
+#userForm input {
+    flex: 1; /* take equal available width */
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 0; /* prevents overflow in flex */
+}
+
+#userForm button {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* prevents button text from wrapping */
+}
+
+#userForm button:hover {
+    background-color: #005fa3;
 }
