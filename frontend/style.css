@@ -5,14 +5,22 @@
     text-decoration: none;
 }
 
+/* 🖼️ Decorative Background */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #f0fff4); /* Soft gradient */
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+/* 🧩 Menu Bar */
 .menu-box {
     display: flex;
-    justify-content: center; /* center items horizontally */
-    align-items: center;     /* center vertically (if taller) */
+    justify-content: center;
+    align-items: center;
     background-color: rgb(82, 221, 170);
     padding: 10px;
     width: 100%;
-    gap: 80px; /* adds spacing between icons */
+    gap: 80px;
 }
 
 .menu-icon {
@@ -21,34 +29,41 @@
     border-radius: 8px;
     font-weight: 500;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    font-family: 'Roboto', sans-serif; /* Updated font */
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu-icon:hover {
     background-color: #d0e6ff;
     color: #0077cc;
-    border: 2px solid #ffcc00; /* Different colored box on hover */
+    border: 2px solid #ffcc00;
 }
 
 .menu-icon:focus {
-    outline: none; /* Remove default focus outline */
+    outline: none;
 }
 
+/* 🧾 Home Container Styling */
 .container {
     width: 90%;
-    max-width: 500px;
-    margin-top: 0px;
-    margin-left: 40px;
-    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 25px;
     font-family: Arial, sans-serif;
-    line-height: 1.6; /* ⬅️ Adds space between lines */
+    line-height: 1.6;
     background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.container:hover {
+    transform: scale(1.01); /* Subtle hover lift effect */
 }
 
 .container h1 {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds space between the emoji and text */
+    gap: 10px;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -56,25 +71,26 @@
 .container p,
 .container button,
 .container input {
-    margin-bottom: 12px; /* ⬅️ Adds space between each element */
+    margin-bottom: 12px;
 }
 
 .input-row {
     display: flex;
-    gap: 10px;               /* spacing between input and button */
-    margin-bottom: 12px;     /* space below the row */
-    flex-wrap: wrap;         /* wraps on small screens */
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
 }
 
 .input-row input,
 .input-row button {
-    flex: 1;                 /* make them the same width */
+    flex: 1;
     padding: 10px 14px;
     font-size: 16px;
     border-radius: 8px;
     box-sizing: border-box;
 }
 
+/* 🔍 Search & Reset Button */
 #resetBtn,
 #search {
     width: 100%;
@@ -85,7 +101,6 @@
     box-sizing: border-box;
 }
 
-/* Specific styles for each */
 #resetBtn {
     background-color: #ff7675;
     color: white;
@@ -122,20 +137,21 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* 👤 User Form */
 #userForm {
     display: flex;
     gap: 10px;
-    flex-wrap: nowrap; /* keep them in one line unless screen is too narrow */
-    align-items: stretch; /* align input and button vertically */
+    flex-wrap: nowrap;
+    align-items: stretch;
 }
 
 #userForm input {
-    flex: 1; /* take equal available width */
+    flex: 1;
     padding: 15px;
     font-size: 18px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    min-width: 0; /* prevents overflow in flex */
+    min-width: 0;
 }
 
 #userForm button {
@@ -147,56 +163,26 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    white-space: nowrap; /* prevents button text from wrapping */
+    white-space: nowrap;
 }
 
 #userForm button:hover {
     background-color: #005fa3;
 }
 
+/* 📰 News Scroll Box */
 .news-scrollable {
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
-    width: 60%; /* Occupies about 60% of the screen width */
+    width: 60%;
 }
 
+/* ⏳ Loading Indicator */
 #loading {
     text-align: center;
     font-size: 18px;
     color: #0077cc;
-}
-
-#userForm {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap; /* keep them in one line unless screen is too narrow */
-    align-items: stretch; /* align input and button vertically */
-}
-
-#userForm input {
-    flex: 1; /* take equal available width */
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    min-width: 0; /* prevents overflow in flex */
-}
-
-#userForm button {
-    padding: 15px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    white-space: nowrap; /* prevents button text from wrapping */
-}
-
-#userForm button:hover {
-    background-color: #005fa3;
 }

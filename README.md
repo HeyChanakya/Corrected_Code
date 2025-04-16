@@ -52,7 +52,7 @@
 | 13  |Fixed delete button in search to use DELETE instead of PATCH|navadeep| navadeep              |
 | 14  | included prefix in router in main.py     | Chanakya      |     Chanakya           |
 | 15  | added viewport in analytics.html so that we can view in mobile also                                          | yogansh              | yogansh             |
-| 16  |                                          |               |              |
+| 16  |Added styles to all page made it look good , also made the navigation bars better.                                     |Mahanth Reddy               |Mahanth Reddy              |
 | 17  |removed base url in profile.js                                          |Mahanth Reddy               | Mahanth Reddy             |
 | 18  |                                          |               |              |
 | 19  | Items.js used post instead of delete     |   Chanakya    |   Chanakya   |
