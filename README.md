@@ -53,7 +53,7 @@
 | 14  | included prefix in router in main.py     | Chanakya      |     Chanakya           |
 | 15  | added viewport in analytics.html so that we can view in mobile also                                          | yogansh              | yogansh             |
 | 16  |                                          |               |              |
-| 17  |Included base url in profile.js                                          |Mahanth Reddy               | Mahanth Reddy             |
+| 17  |removed base url in profile.js                                          |Mahanth Reddy               | Mahanth Reddy             |
 | 18  |                                          |               |              |
 | 19  | Items.js used post instead of delete     |   Chanakya    |   Chanakya   |
 | 20  |  Changed content type in header of fetching form in items|   Chanakya   |   Chanakya |
@@ -61,10 +61,15 @@
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
 | 24  |   Removed second post code in items.py   |     Chanakya         |  Chanakya            |
-| 25  |        Changed delete route in items.py     |    Chanakya           |  Chanakya            |
+| 25  |   Changed delete route in items.py     |    Chanakya           |  Chanakya            |
 | 26  |                                          |               |              |
 | 27  |                                          |               |              |
 | 28  |                                          |               |              |
 | 29  |                                          |               |              |
 | 30  |                                          |               |              |
 
+#This is my repo link
+
+https://github.com/HeyChanakya/Corrected_Code.git
+
+https://github.com/HeyChanakya/Corrected_Code
