@@ -55,13 +55,13 @@
 | 16  |                                          |               |              |
 | 17  |Included base url in profile.js                                          |Mahanth Reddy               | Mahanth Reddy             |
 | 18  |                                          |               |              |
-| 19  |                                          |               |              |
-| 20  |                                          |               |              |
+| 19  | Items.js used post instead of delete     |   Chanakya    |   Chanakya   |
+| 20  |  Changed content type in header of fetching form in items|   Chanakya   |   Chanakya |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
-| 24  |                                          |               |              |
-| 25  |                                          |               |              |
+| 24  |   Removed second post code in items.py   |     Chanakya         |  Chanakya            |
+| 25  |        Changed delete route in items.py     |    Chanakya           |  Chanakya            |
 | 26  |                                          |               |              |
 | 27  |                                          |               |              |
 | 28  |                                          |               |              |
