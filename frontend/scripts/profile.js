@@ -5,7 +5,7 @@ async function loadUsers() {
   const list = document.getElementById("userList");
   list.innerHTML = "";
   
-  document.getElementById("userCount").textContent = `Total users: ${users.length}`;
+  document.getElementById("userCounts").textContent = `Total users: ${users.length}`;
   // why did I give such a weird task
   users.forEach(user => {
     const li = document.createElement("li");
