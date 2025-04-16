@@ -38,9 +38,9 @@
 | 4   |   added a new container in items.html    |    Chanakya   |   Chanakya   |
 | 5   |  In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror  | yogansh  | yogansh   |
 | 6   |In profile.html there is typo userCount but it should be usercounts| navadeep| navadeep|
-| 7   |                                          |               |              |
+| 7   |In analytics.py,JavaScript expected a "plot" in the API response (data.plot) but the backend didn’t send it.                                          |yogansh               | yogansh             |
 | 8   |In every page quiz option is not there and in quiz page news and analytics page is not included, I included all the requirements.|Mahanth Reddy |Mahanth Reddy |
-| 9   |                                          |               |              |
+| 9   | In analytics.html,when we view ,there are no options to go back so i added that code                                         | yogansh              |yogansh              |
 | 10  |   In models.py added basemodel in class  | chanakya     |   chanakya |
 | 11  |                                          |               |              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
