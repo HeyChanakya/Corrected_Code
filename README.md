@@ -34,7 +34,7 @@
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
 | 2   | In profile.html path for profile.js is incorrect | navadeep  |navadeep   |
-| 3   |                                          |               |              |
+| 3   | In new.js when i select the source it should only display the news of that source but isnt, i     made the changes in the parts that are needed to make it              functional                                       | Mahanth Reddy |Mahanth Reddy |                                          |               |              |
 | 4   |                                          |               |              |
 | 5   | In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror                                        | yogansh              | yogansh             |
 | 6   |                                          |               |              |

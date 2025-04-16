@@ -5,25 +5,26 @@ const feeds = [
 ];
 let allArticles = [];
 
+// Load news from selected source and optional search term
 async function loadNews(searchTerm = "", source = "all", reset = false) {
   const list = document.getElementById("newsList");
   const loading = document.getElementById("loading");
-  
+
   if (reset) {
     allArticles = [];
     list.innerHTML = "";
   }
-  
+
   loading.style.display = "block";
-  
+
   try {
     const selectedFeeds = source === "all" ? feeds : feeds.filter(f => f.name === source);
-    
+
     for (const feed of selectedFeeds) {
       const res = await fetch(`${rssConverter}${encodeURIComponent(feed.url)}`);
       if (!res.ok) throw new Error(`Failed to fetch ${feed.name}`);
       const data = await res.json();
-      
+
       const articles = (data.items || []).map(item => ({
         title: item.title || "No title",
         description: item.description || "No description",
@@ -31,20 +32,20 @@ async function loadNews(searchTerm = "", source = "all", reset = false) {
         source: feed.name.toUpperCase(),
         pubDate: item.pubDate ? new Date(item.pubDate).toLocaleDateString() : "Unknown"
       }));
-      
+
       allArticles.push(...articles);
     }
-    
+
     const filteredArticles = searchTerm
       ? allArticles.filter(article =>
           article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
           article.description.toLowerCase().includes(searchTerm.toLowerCase())
         )
       : allArticles;
-    
+
     document.getElementById("articleCount").textContent = `Total articles: ${filteredArticles.length}`;
-    // OPINION: Javascript syntax is stupid
     list.innerHTML = "";
+
     filteredArticles.forEach(article => {
       const div = document.createElement("div");
       div.className = "news-item";
@@ -56,7 +57,7 @@ async function loadNews(searchTerm = "", source = "all", reset = false) {
       `;
       list.appendChild(div);
     });
-    
+
   } catch (err) {
     list.innerHTML += `<p style="color: red;">Error: ${err.message}</p>`;
   } finally {
@@ -64,5 +65,14 @@ async function loadNews(searchTerm = "", source = "all", reset = false) {
   }
 }
 
-
+// Initial load
 loadNews();
+
+// Attach source change event
+document.addEventListener("DOMContentLoaded", () => {
+  const sourceSelect = document.getElementById("source");
+  sourceSelect.addEventListener("change", (e) => {
+    const selectedSource = e.target.value;
+    loadNews("", selectedSource, true); // reset = true to clear old articles
+  });
+});
