@@ -57,9 +57,9 @@
 | 18  |                                          |               |              |
 | 19  | Items.js used post instead of delete     |   Chanakya    |   Chanakya   |
 | 20  |  Changed content type in header of fetching form in items|   Chanakya   |   Chanakya |
-| 21  |                                          |               |              |
-| 22  |                                          |               |              |
-| 23  |                                          |               |              |
+| 21  |Added a model to parse POST body data in quiz.py,Changed data type to model                                          | yogansh              | yogansh             |
+| 22  |Changed from GET to POST to support JSON body in quiz.py                                     | yogansh              | yogansh             |
+| 23  | Replaced data.get(...) with attribute access (data.id, data.answer, etc.) in quiz.py.                                         | yogansh              | yogansh             |
 | 24  |   Removed second post code in items.py   |     Chanakya         |  Chanakya            |
 | 25  |   Changed delete route in items.py     |    Chanakya           |  Chanakya            |
 | 26  |                                          |               |              |
