@@ -32,18 +32,18 @@
 
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
-| 2   | In profile.html path for profile.js is incorrect | navadeep  |navadeep   |
-| 3   | In new.js when i select the source it should only display the news of that source but isnt, i     made the changes in the parts that are needed to make it              functional                                       | Mahanth Reddy |Mahanth Reddy |                                          |               |              |
-| 4   |                                          |               |              |
-| 5   | In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror                                        | yogansh              | yogansh             |
+| 1   | Style.css is not filled                  |    Narain     | Whole Team   |
+| 2   |                                          |               |              |
+| 3   |                                          |               |              |
+| 4   |   added a new container in items.html    |    Chanakya   |   Chanakya   |
+| 5   |                                          |               |              |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
 | 11  |                                          |               |              |
-| 12  |                                          |               |              |
+| 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
 | 13  |                                          |               |              |
 | 14  |                                          |               |              |
 | 15  |                                          |               |              |
