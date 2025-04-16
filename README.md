@@ -57,9 +57,9 @@
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
-| 21  |                                          |               |              |
-| 22  |                                          |               |              |
-| 23  |                                          |               |              |
+| 21  |Added a model to parse POST body data in quiz.py,Changed data type to model                                          | yogansh              | yogansh             |
+| 22  |Changed from GET to POST to support JSON body in quiz.py                                     | yogansh              | yogansh             |
+| 23  | Replaced data.get(...) with attribute access (data.id, data.answer, etc.) in quiz.py.                                         | yogansh              | yogansh             |
 | 24  |                                          |               |              |
 | 25  |                                          |               |              |
 | 26  |                                          |               |              |

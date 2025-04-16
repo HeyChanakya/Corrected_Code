@@ -1,9 +1,9 @@
 from fastapi import APIRouter
+from pydantic import BaseModel  # ✅ Added to define request body schema
 import random
 
 router = APIRouter(tags=["quiz"])
 
-# I actually could have added this to a collection in mongodb
 questions = [
     {
         "id": 1,
@@ -38,7 +38,7 @@ questions = [
 ]
 
 game_state = {"high_score": 0}
-# god would hate me for not dockerizing this repo
+
 @router.get("/question")
 async def get_question():
     question = questions[1]
@@ -48,17 +48,20 @@ async def get_question():
         "options": question["options"]
     }
 
-@router.get("/answer")
-async def submit_answer(data: dict):
-    question_id = data.get("id")
-    answer = data.get("answer")
-    score = data.get("score", 0)
+class AnswerRequest(BaseModel):
+    id: int
+    answer: str
+    score: int = 0
 
-    question = next((q for q in questions if q["id"] == question_id), None)
+@router.post("/answer")  
+async def submit_answer(data: AnswerRequest):  
+    question = next((q for q in questions if q["id"] == data.id), None)
     if not question:
         return {"error": "Invalid question ID"}
 
-    is_correct = answer == question["correct"]
+    is_correct = data.answer == question["correct"]  # ✅ Changed from data.get("answer")
+    score = data.score  # ✅ Changed from data.get("score", 0)
+
     if is_correct:
         score += 10
         if score > game_state["high_score"]:
