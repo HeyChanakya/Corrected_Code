@@ -53,7 +53,7 @@
 | 14  | included prefix in router in main.py     | Chanakya      |     Chanakya           |
 | 15  | added viewport in analytics.html so that we can view in mobile also                                          | yogansh              | yogansh             |
 | 16  |                                          |               |              |
-| 17  |                                          |               |              |
+| 17  |Included base url in profile.js                                          |Mahanth Reddy               | Mahanth Reddy             |
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
