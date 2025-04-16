@@ -33,15 +33,15 @@
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                  |    Narain     | Whole Team   |
-| 2   |                                          |               |              |
-| 3   |                                          |               |              |
+| 2   |In profile.html path for profile.js is incorrect|navadeep |navadeep       |
+| 3   | In new.js when i select the source it should only display the news of that source but isnt, i     made the changes in the parts that are needed to make it              functional                                       | Mahanth Reddy |Mahanth Reddy | 
 | 4   |   added a new container in items.html    |    Chanakya   |   Chanakya   |
-| 5   |                                          |               |              |
-| 6   |                                          |               |              |
+| 5   |  In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror                                        | yogansh              | yogansh             |
+| 6   |In profile.html there is typo userCount but it should be usercounts| navadeep| navadeep|
 | 7   |                                          |               |              |
-| 8   |                                          |               |              |
+| 8   |In every page quiz option is not there and in quiz page news and analytics page is not included, I included all the requirements.                 |Mahanth Reddy  |Mahanth Reddy |
 | 9   |                                          |               |              |
-| 10  |                                          |               |              |
+| 10  |   In models.py added basemodel in class  | chanakya     |   chanakya |
 | 11  |                                          |               |              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
 | 13  |                                          |               |              |
