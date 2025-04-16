@@ -36,7 +36,7 @@
 | 2   | In profile.html path for profile.js is incorrect | navadeep  |navadeep   |
 | 3   |                                          |               |              |
 | 4   |                                          |               |              |
-| 5   |                                          |               |              |
+| 5   | In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror                                        | yogansh              | yogansh             |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
