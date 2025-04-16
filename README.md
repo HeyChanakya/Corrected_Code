@@ -44,7 +44,7 @@
 | 10  |   In models.py added basemodel in class  | chanakya     |   chanakya |
 | 11  |                                          |               |              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
-| 13  |                                          |               |              |
+| 13  |Fixed delete button in search to use DELETE instead of PATCH|navadeep| navadeep              |
 | 14  |                                          |               |              |
 | 15  |                                          |               |              |
 | 16  |                                          |               |              |
@@ -62,3 +62,4 @@
 | 28  |                                          |               |              |
 | 29  |                                          |               |              |
 | 30  |                                          |               |              |
+

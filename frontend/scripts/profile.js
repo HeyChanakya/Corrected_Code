@@ -31,7 +31,7 @@ document.getElementById("search").addEventListener("input", async (e) => {
   list.innerHTML = "";
 
   const filteredUsers = users.filter(user => user.username.toLowerCase().includes(term));
-  document.getElementById("userCount").textContent = `Total users: ${filteredUsers.length}`;
+  document.getElementById("userCounts").textContent = `Total users: ${filteredUsers.length}`;
 
   filteredUsers.forEach(user => {
     const li = document.createElement("li");
@@ -40,7 +40,7 @@ document.getElementById("search").addEventListener("input", async (e) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.onclick = async () => {
-      await fetch(`/users/${user._id}`, { method: "PATCH" });
+      await fetch(`/users/${user._id}`, { method: "DELETE" });
       loadUsers();
     };
 
