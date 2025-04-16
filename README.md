@@ -45,7 +45,7 @@
 | 11  | Making the search bar in news bar functional                                         |Mahanth Reddy                |Mahanth Reddy              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
 | 13  |Fixed delete button in search to use DELETE instead of PATCH|navadeep| navadeep              |
-| 14  |                                          |               |              |
+| 14  |added viewport in analytics.html so that we can view in mobile also                                          | yogansh              | yogansh             |
 | 15  |                                          |               |              |
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |
