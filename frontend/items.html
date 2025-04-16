@@ -14,7 +14,17 @@
     <a href="news.html">News</a>
   </nav>
   <!-- fuck I think I deleted a container, god help me-->
-
+  <div class="container">
+    <p id="itemsCounts">Total items: 0</p>
+    <input type="text" id="search" placeholder="Search items..." />
+    <h1>Items</h1>
+    <form id="userForm">
+      <input type="text" id="item" placeholder="Item" required />
+      <input type="text" id="description" placeholder="Description" required />
+      <button type="submit">Add User</button>
+    </form>
+    <ul id="itemList"></ul>
+  </div>
   <script src="scripts/items.js"></script>
 </body>
 </html>
