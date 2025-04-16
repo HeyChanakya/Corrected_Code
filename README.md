@@ -38,7 +38,7 @@
 | 4   |                                          |               |              |
 | 5   | In analytics.py,we are appending MongoDB user documents to a list of string This mixes str and dict types which causes typeerror                                        | yogansh              | yogansh             |
 | 6   |                                          |               |              |
-| 7   |                                          |               |              |
+| 7   | In analytics.py, js expected a "plot" in the API response (data.plot) but backend didn’t send it.                                        |  yogansh              | yogansh            |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
