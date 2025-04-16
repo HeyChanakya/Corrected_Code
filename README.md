@@ -27,6 +27,11 @@
 ### Add the names of the members and roll numbers of your team below
 
 - Name : Roll Number
+    Navadeep Kiran Kollupoti: 2024101056
+    Arumalla Chanakya: 2024101120
+    Naga Saketh: 2024101063
+    Yogansh: 2024101006
+    Kunreddy Mahanth Reddy: 2024101017
 
 ### Table to keep track
 
@@ -45,7 +50,7 @@
 | 11  |                                          |               |              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
 | 13  |Fixed delete button in search to use DELETE instead of PATCH|navadeep| navadeep              |
-| 14  |                                          |               |              |
+| 14  | included prefix in router in main.py     | Chanakya      |     Chanakya           |
 | 15  |                                          |               |              |
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |
