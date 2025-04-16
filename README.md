@@ -42,7 +42,7 @@
 | 8   |In every page quiz option is not there and in quiz page news and analytics page is not included, I included all the requirements.|Mahanth Reddy |Mahanth Reddy |
 | 9   | In analytics.html,when we view ,there are no options to go back so i added that code                                         | yogansh              |yogansh              |
 | 10  |   In models.py added basemodel in class  | chanakya     |   chanakya |
-| 11  |                                          |               |              |
+| 11  | Making the search bar in news bar functional                                         |Mahanth Reddy                |Mahanth Reddy              |
 | 12  |in items.py changed router={} to APIRouter()| Chanakya|   Chanakya           |
 | 13  |Fixed delete button in search to use DELETE instead of PATCH|navadeep| navadeep              |
 | 14  |                                          |               |              |

@@ -68,11 +68,20 @@ async function loadNews(searchTerm = "", source = "all", reset = false) {
 // Initial load
 loadNews();
 
-// Attach source change event
+// Attach dropdown and search input handlers
 document.addEventListener("DOMContentLoaded", () => {
   const sourceSelect = document.getElementById("source");
-  sourceSelect.addEventListener("change", (e) => {
-    const selectedSource = e.target.value;
-    loadNews("", selectedSource, true); // reset = true to clear old articles
+  const searchInput = document.getElementById("search");
+
+  sourceSelect.addEventListener("change", () => {
+    const selectedSource = sourceSelect.value;
+    const searchTerm = searchInput.value;
+    loadNews(searchTerm, selectedSource, true);
+  });
+
+  searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value;
+    const selectedSource = sourceSelect.value;
+    loadNews(searchTerm, selectedSource, true);
   });
 });
