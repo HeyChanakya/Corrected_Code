@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from pydantic import BaseModel  # ✅ Added to define request body schema
+from pydantic import BaseModel
 import random
 
 router = APIRouter(tags=["quiz"])
@@ -59,8 +59,8 @@ async def submit_answer(data: AnswerRequest):
     if not question:
         return {"error": "Invalid question ID"}
 
-    is_correct = data.answer == question["correct"]  # ✅ Changed from data.get("answer")
-    score = data.score  # ✅ Changed from data.get("score", 0)
+    is_correct = data.answer == question["correct"]
+    score = data.score
 
     if is_correct:
         score += 10
